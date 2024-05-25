@@ -1,0 +1,56 @@
+the idea of react is very simple
+
+it creates a v-dom to mimic the original dom 
+
+so that if any change is made to dom, it will not 
+need to rerender the whole thing but just what was 
+changed
+
+reconciliation
+The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+
+update
+A change in the data used to render a React app. Usually the result of `setState`. Eventually results in a re-render.
+
+
+dumb component: component that does not accept props
+
+when working with state and hook, if there is a need for previous 
+value, use callback that give access to previous value
+
+useCallback is a React Hook that lets you cache a function definition between re-renders.
+best when the dependencies value don't change too frequently
+
+useEffect is a React Hook that lets you synchronize a component with an external system.
+
+Refs: React provides a way to directly interact with the DOM using refs. Refs can be used to access DOM elements and manipulate them directly, which is useful for tasks like focusing an input, selecting text, or performing animations.
+
+
+Industry standard
+
+check if method exist b4 using it
+
+(e) => onCurrencyChange && onCurrencyChange(e.target.value)
+
+
+Remember, react is SPA single page application
+
+basically remove and inject component on the same page 
+
+but most web apps don't work that way
+
+React router dom allows to create a router of different 
+kinds e.g browserRouter
+
+Each route can define a "loader" function to provide data to the route element before it renders.
+
+
+context api
+state management 
+for state that won't change as much 
+user authenication, theme settings 
+
+the store, the context (other tools refer as store) 
+
+It is always a good idea to target your state management 
+b4 doing other things 
